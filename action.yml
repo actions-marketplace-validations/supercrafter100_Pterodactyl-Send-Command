@@ -1,0 +1,24 @@
+name: 'Pterodactyl-Command'
+description: 'Automatically send a command to a container'
+author: '[Supercrafter100]'
+
+inputs:
+  PTE_PANEL_URL:
+    description: 'The pterodactyl panel URL'
+    required: true
+  
+  PTE_BEARER_TOKEN:
+    description: 'the bearer token for the panel to authorize'
+    required: true
+  
+  PTE_PANEL_ID:
+    description: 'The ID of that panel that has to be restarted'
+    required: true
+
+  PTE_COMMAND:
+    description: 'The command to send to the container'
+    required: true
+
+runs:
+  using: 'node24'
+  main: 'dist/index.js'
