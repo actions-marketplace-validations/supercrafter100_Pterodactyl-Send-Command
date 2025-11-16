@@ -29,7 +29,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Send command to Pterodactyl server
-              uses: supercrafter100/pterodactyl-send-command-action@v1
+              uses: supercrafter100/Pterodactyl-Send-Command@v1
               with:
                   PTE_PANEL_URL: 'https://panel.example.com'
                   PTE_BEARER_TOKEN: ${{ secrets.PTERODACTYL_TOKEN }}
@@ -51,7 +51,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Restart Pterodactyl server
-              uses: supercrafter100/pterodactyl-send-command-action@v1
+              uses: supercrafter100/Pterodactyl-Send-Command@v1
               with:
                   PTE_PANEL_URL: ${{ secrets.PANEL_URL }}
                   PTE_BEARER_TOKEN: ${{ secrets.PTERODACTYL_TOKEN }}
@@ -72,7 +72,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Announce maintenance
-              uses: supercrafter100/pterodactyl-send-command-action@v1
+              uses: supercrafter100/Pterodactyl-Send-Command@v1
               with:
                   PTE_PANEL_URL: ${{ secrets.PANEL_URL }}
                   PTE_BEARER_TOKEN: ${{ secrets.PTERODACTYL_TOKEN }}
@@ -83,7 +83,7 @@ jobs:
               run: sleep 300
 
             - name: Save world
-              uses: supercrafter100/pterodactyl-send-command-action@v1
+              uses: supercrafter100/Pterodactyl-Send-Command@v1
               with:
                   PTE_PANEL_URL: ${{ secrets.PANEL_URL }}
                   PTE_BEARER_TOKEN: ${{ secrets.PTERODACTYL_TOKEN }}
