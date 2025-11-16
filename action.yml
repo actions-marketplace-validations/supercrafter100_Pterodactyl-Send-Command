@@ -1,6 +1,8 @@
 name: 'Pterodactyl-Command'
 description: 'Automatically send a command to a container'
 author: '[Supercrafter100]'
+icon: bar-chart
+color: blue
 
 inputs:
   PTE_PANEL_URL:
